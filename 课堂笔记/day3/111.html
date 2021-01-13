@@ -1,0 +1,279 @@
+<p style="text-align: center;"><span style="color: rgb(51, 51, 51); font-family: " helvetica="" font-size:=""
+        text-align:="" background-color:="">支出凭单</span></p>
+<table data-sort="sortDisabled" id="tablelist">
+    <tbody>
+        <tr class="firstRow">
+            <td valign="top" colspan="3" rowspan="1" style="border-width: 1px; border-style: solid;"><br /></td>
+            <td valign="top" colspan="1" rowspan="1"
+                style="word-break: break-all; border-width: 1px; border-style: solid;">编号：</td>
+        </tr>
+        <tr>
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">创建人：</td>
+            <td width="215" valign="top" style="word-break: break-all; border-width: 1px; border-style: solid;"
+                class="selectTdClass"><span class="form-group"><input id="createByChinese" type="text"
+                        name="createByChinese" data-associatedfields="undefined" readonly="readonly" placeholder="创建人"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;" /></span>
+            </td>
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">日期：</td>
+            <td width="215" valign="top" style="word-break: break-all; border-width: 1px; border-style: solid;"
+                class="selectTdClass"><span class="form-group"><input id="pingdanriqi" type="text" data-defaultdate="2"
+                        maxlength="50" data-associatedfields="[]" isrelationtitle="2" name="pingdanriqi"
+                        placeholder="凭单日期"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        class="yeartodate" readonly="readonly" data-bv-notempty=""
+                        data-bv-notempty-message="不能为空" /></span></td>
+        </tr>
+        <tr>
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">部门：</td>
+            <td width="215" valign="top" class="selectTdClass" style="border-width: 1px; border-style: solid;"><span
+                    class="form-group"><input id="dept" type="text" name="dept" data-associatedfields="undefined"
+                        readonly="readonly" placeholder="部门"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;" /></span>
+            </td>
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">项目名称：</td>
+            <td width="215" valign="top" class="selectTdClass" style="border-width: 1px; border-style: solid;"><span
+                    class="form-group"><input id="xiangmumingcheng_project" class="controls_input"
+                        onclick="jumpControl(this)" data-associatedfields="[]"
+                        data-href="model/formControls/projectSelect.html" maxlength="50" name="xiangmumingcheng_project"
+                        placeholder="项目名称" readonly="readonly"
+                        style="background-color: #FFF; width: 80%; background-image: none; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; display: inline-block; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /><input type="hidden" class="controlId"
+                        id="xiangmumingcheng_project_hidden" name="xiangmumingcheng_projectid" /></span></td>
+        </tr>
+        <tr>
+            <td width="215" valign="middle"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">摘要及用途：</td>
+            <td valign="top" rowspan="1" colspan="3"><span class="form-group"><textarea id="zhaiyaojiyongtu"
+                        maxlength="200" name="zhaiyaojiyongtu" placeholder="摘要及用途" data-associatedfields="[]"
+                        style="background-color: #FFF; width: 80%; background-image: none; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; display: inline-block; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空"></textarea></span></td>
+        </tr>
+        <tr>
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">金额：</td>
+            <td valign="top" rowspan="1" colspan="3" class="selectTdClass"
+                style="border-width: 1px; border-style: solid;"><span class="form-group"><input id="jine" type="text"
+                        data-defaultdate="2" maxlength="50" data-associatedfields="[]" isrelationtitle="2" name="jine"
+                        placeholder="金额"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+        </tr>
+        <tr>
+            <td width="215" valign="middle"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">备注：</td>
+            <td valign="top" rowspan="1" colspan="3"><span class="form-group"><textarea id="beizhu" maxlength="500"
+                        name="beizhu" placeholder="备注" data-associatedfields="[]"
+                        style="background-color: #FFF; width: 80%; background-image: none; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; display: inline-block; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空"></textarea></span></td>
+        </tr>
+        <tr>
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">附单据数（张）：</td>
+            <td width="215" valign="top" class="selectTdClass" style="border-width: 1px; border-style: solid;"><span
+                    class="form-group"><input id="fudanjushu" type="text" data-defaultdate="2" maxlength="50"
+                        data-associatedfields="[]" isrelationtitle="2" name="fudanjushu" placeholder="附单据数"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">是否为合同支出费用：</td>
+            <td width="219" valign="top" style="word-break: break-all; border-width: 1px; border-style: solid;"
+                class="selectTdClass"><span class="form-group"> <input oninput="getValu(this)" id="" type="radio"
+                        value="1" name="ifcontractcost" data-associatedfields="[]" class="checkVal" checked=""
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" />是<input id="" oninput="getValu(this)"
+                        type="radio" value="0" name="ifcontractcost" data-associatedfields="[]" data-bv-notempty=""
+                        class="checkVal" data-bv-notempty-message="不能为空" />否</span></td>
+        </tr>
+
+
+        <tr class="isShow">
+            <td valign="top" rowspan="1" colspan="4"
+                style="word-break: break-all; border-width: 1px; border-style: solid;" align="center"
+                class="selectTdClass"><span style="color: rgb(51, 51, 51);" helvetica="" font-size:=""
+                    text-align:="" text-indent:="" background-color:="">大通世纪合同款支出申请</span></td>
+        </tr>
+        <tr class="isShow">
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">合同名称：<br /></td>
+            <td width="215" valign="top" class="selectTdClass" style="border-width: 1px; border-style: solid;"><span
+                    class="form-group"><input id="hetongmingcheng" type="text" data-defaultdate="2" maxlength="50"
+                        data-associatedfields="[]" isrelationtitle="2" name="hetongmingcheng" placeholder="合同名称"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">合同编号：</td>
+            <td width="215" valign="top" class="selectTdClass" style="border-width: 1px; border-style: solid;"><span
+                    class="form-group"><input id="hetongbianhao" type="text" data-defaultdate="2" maxlength="50"
+                        data-associatedfields="[]" isrelationtitle="2" name="hetongbianhao" placeholder="合同编号"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;" /></span>
+            </td>
+        </tr>
+        <tr class="isShow">
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">合同签订时间：</td>
+            <td width="215" valign="top" class="selectTdClass" style="border-width: 1px; border-style: solid;"><span
+                    class="form-group"><input id="hetongqiandingshijian" type="text" data-defaultdate="2" maxlength="50"
+                        data-associatedfields="[]" isrelationtitle="2" name="hetongqiandingshijian" placeholder="合同签订时间"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        class="yeartodate" readonly="readonly" data-bv-notempty=""
+                        data-bv-notempty-message="不能为空" /></span></td>
+            <td width="215" valign="top"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">合同金额（元）：</td>
+            <td width="215" valign="top" class="selectTdClass" style="border-width: 1px; border-style: solid;"><span
+                    class="form-group"><input id="hetongjine" type="text" data-defaultdate="2" maxlength="50"
+                        data-associatedfields="[]" isrelationtitle="2" name="hetongjine" placeholder="合同金额"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+        </tr>
+        <tr class="isShow">
+            <td width="215" valign="middle"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">付款方式：</td>
+            <td valign="top" colspan="3" rowspan="1" style="word-break: break-all;"><span class="form-group"><textarea
+                        id="fukuanfangshi" maxlength="200" name="fukuanfangshi" placeholder="付款方式"
+                        data-associatedfields="[]"
+                        style="background-color: #FFF; width: 80%; background-image: none; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; display: inline-block; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; font-size: 14px;"></textarea></span>
+            </td>
+        </tr>
+        <tr class="isShow">
+            <td valign="top" colspan="1" rowspan="1"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">本次付款金额（元）：</td>
+            <td valign="top" colspan="1" rowspan="1" class="selectTdClass"
+                style="border-width: 1px; border-style: solid;"><span class="form-group"><input id="bencifukuanjine"
+                        type="text" data-defaultdate="2" maxlength="50" data-associatedfields="[]" isrelationtitle="2"
+                        name="bencifukuanjine" placeholder="本次付款金额"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+            <td valign="top" colspan="1" rowspan="1"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">付款批次：</td>
+            <td valign="top" colspan="1" rowspan="1" class="selectTdClass"
+                style="border-width: 1px; border-style: solid;"><span class="form-group"><input id="fukuanpici"
+                        type="text" data-defaultdate="2" maxlength="50" data-associatedfields="[]" isrelationtitle="2"
+                        name="fukuanpici" placeholder="付款批次"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+        </tr>
+        <tr class="isShow">
+            <td valign="top" colspan="1" rowspan="1"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">本次付款比例：</td>
+            <td valign="top" colspan="1" rowspan="1" class="selectTdClass"
+                style="border-width: 1px; border-style: solid;"><span class="form-group"><input id="bencifukuanbili"
+                        type="text" data-defaultdate="2" maxlength="50" data-associatedfields="[]" isrelationtitle="2"
+                        name="bencifukuanbili" placeholder="本次付款比例"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+            <td valign="top" colspan="1" rowspan="1"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">剩余比例：</td>
+            <td valign="top" colspan="1" rowspan="1" class="selectTdClass"
+                style="border-width: 1px; border-style: solid;"><span class="form-group"><input id="shengyubili"
+                        type="text" data-defaultdate="2" maxlength="50" data-associatedfields="[]" isrelationtitle="2"
+                        name="shengyubili" placeholder="剩余比例"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+        </tr>
+        <tr class="isShow">
+            <td valign="middle" colspan="1" rowspan="2"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">收款单位：</td>
+            <td valign="top" colspan="1" rowspan="2" class="selectTdClass"
+                style="border-width: 1px; border-style: solid;"><span class="form-group"><input id="shoukuandanwei"
+                        type="text" data-defaultdate="2" maxlength="50" data-associatedfields="[]" isrelationtitle="2"
+                        name="shoukuandanwei" placeholder="收款单位"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+            <td valign="top" colspan="1" rowspan="1"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">开户银行：</td>
+            <td valign="top" colspan="1" rowspan="1" class="selectTdClass"
+                style="border-width: 1px; border-style: solid;"><span class="form-group"><input id="kaihuyinhang"
+                        type="text" data-defaultdate="2" maxlength="50" data-associatedfields="[]" isrelationtitle="2"
+                        name="kaihuyinhang" placeholder="开户银行"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+        </tr>
+        <tr class="isShow">
+            <td valign="top" colspan="1" rowspan="1"
+                style="word-break: break-all; background-color: rgb(219, 229, 241); border-width: 1px; border-style: solid;"
+                class="selectTdClass">银行账号：</td>
+            <td valign="top" colspan="1" rowspan="1" class="selectTdClass"
+                style="border-width: 1px; border-style: solid;"><span class="form-group"><input id="yinhangzhanghao"
+                        type="text" data-defaultdate="2" maxlength="50" data-associatedfields="[]" isrelationtitle="2"
+                        name="yinhangzhanghao" placeholder="银行账号"
+                        style="background-color: #FFF; width: 80%; border: 1px solid #e5e6e7; border-radius: 1px; color: inherit; padding: 4px 12px; -webkit-transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s; transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;font-size: 14px;"
+                        data-bv-notempty="" data-bv-notempty-message="不能为空" /></span></td>
+        </tr>
+    </tbody>
+</table>
+<p><br /></p>
+<script>
+    var checkValue;
+    function getValu(el) {
+        checkValue = el.value;
+        for (var i = 0; i < isShow.length; i++) {
+            if (checkValue == '0') {
+                isShow[i].style.display = 'none';
+                $('#tablelist').data('bootstrapValidator').updateStatus('hetongmingcheng', 'NOT_VALIDATED', null).validateField('hetongmingcheng');
+                $('#tablelist').data('bootstrapValidator').updateStatus('hetongbianhao', 'NOT_VALIDATED', null).validateField('hetongbianhao');
+                $('#tablelist').data('bootstrapValidator').updateStatus('hetongqiandingshijian', 'NOT_VALIDATED', null).validateField('hetongqiandingshijian');
+                $('#tablelist').data('bootstrapValidator').updateStatus('hetongjine', 'NOT_VALIDATED', null).validateField('hetongjine');
+                $('#tablelist').data('bootstrapValidator').updateStatus('fukuanfangshi', 'NOT_VALIDATED', null).validateField('fukuanfangshi');
+                $('#tablelist').data('bootstrapValidator').updateStatus('bencifukuanjine', 'NOT_VALIDATED', null).validateField('bencifukuanjine');
+                $('#tablelist').data('bootstrapValidator').updateStatus('fukuanpici', 'NOT_VALIDATED', null).validateField('fukuanpici');
+                $('#tablelist').data('bootstrapValidator').updateStatus('bencifukuanbili', 'NOT_VALIDATED', null).validateField('bencifukuanbili');
+                $('#tablelist').data('bootstrapValidator').updateStatus('shengyubili', 'NOT_VALIDATED', null).validateField('shengyubili');
+                $('#tablelist').data('bootstrapValidator').updateStatus('shoukuandanwei', 'NOT_VALIDATED', null).validateField('shoukuandanwei');
+                $('#tablelist').data('bootstrapValidator').updateStatus('kaihuyinhang', 'NOT_VALIDATED', null).validateField('kaihuyinhang');
+                $('#tablelist').data('bootstrapValidator').updateStatus('yinhangzhanghao', 'NOT_VALIDATED', null).validateField('yinhangzhanghao');
+            } else {
+                isShow[i].style.display = 'table-row';
+            }
+        }
+    }
+    var checkVal = document.getElementsByClassName("checkVal");
+    for (var i = 0; i < checkVal.length; i++) {
+        if (checkVal[i].checked) {
+            checkValue = checkVal[i].value;
+        }
+    }
+    var isShow = document.getElementsByClassName("isShow");
+    for (var i = 0; i < isShow.length; i++) {
+        if (checkValue == '0') {
+            isShow[i].style.display = 'none';
+            $('#tablelist').data('bootstrapValidator').updateStatus('hetongmingcheng', 'NOT_VALIDATED', null).validateField('hetongmingcheng');
+                $('#tablelist').data('bootstrapValidator').updateStatus('hetongbianhao', 'NOT_VALIDATED', null).validateField('hetongbianhao');
+                $('#tablelist').data('bootstrapValidator').updateStatus('hetongqiandingshijian', 'NOT_VALIDATED', null).validateField('hetongqiandingshijian');
+                $('#tablelist').data('bootstrapValidator').updateStatus('hetongjine', 'NOT_VALIDATED', null).validateField('hetongjine');
+                $('#tablelist').data('bootstrapValidator').updateStatus('fukuanfangshi', 'NOT_VALIDATED', null).validateField('fukuanfangshi');
+                $('#tablelist').data('bootstrapValidator').updateStatus('bencifukuanjine', 'NOT_VALIDATED', null).validateField('bencifukuanjine');
+                $('#tablelist').data('bootstrapValidator').updateStatus('fukuanpici', 'NOT_VALIDATED', null).validateField('fukuanpici');
+                $('#tablelist').data('bootstrapValidator').updateStatus('bencifukuanbili', 'NOT_VALIDATED', null).validateField('bencifukuanbili');
+                $('#tablelist').data('bootstrapValidator').updateStatus('shengyubili', 'NOT_VALIDATED', null).validateField('shengyubili');
+                $('#tablelist').data('bootstrapValidator').updateStatus('shoukuandanwei', 'NOT_VALIDATED', null).validateField('shoukuandanwei');
+                $('#tablelist').data('bootstrapValidator').updateStatus('kaihuyinhang', 'NOT_VALIDATED', null).validateField('kaihuyinhang');
+                $('#tablelist').data('bootstrapValidator').updateStatus('yinhangzhanghao', 'NOT_VALIDATED', null).validateField('yinhangzhanghao');
+        } else {
+            isShow[i].style.display = 'table-row';
+        }
+    }
+</script>
+<p><br /></p>
